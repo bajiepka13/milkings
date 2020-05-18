@@ -13,12 +13,6 @@ import java.net.URI;
 import java.util.List;
 import java.util.Objects;
 
-@CrossOrigin(origins = {
-        "http://localhost:3000",
-        "http://localhost:4200",
-        "http://192.168.0.104:3000",
-        "http://192.168.0.104:4200"
-})
 @RestController
 public class MilkingController {
 
