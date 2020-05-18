@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="d8200825-30b9-4756-8622-05c1fae792e6" author="baji256">
+        <createSequence sequenceName="MILKING_SEQ"
+                        cacheSize="20"
+                        startValue="1"
+                        minValue="1"
+                        incrementBy="1" />
+        <rollback>
+            <dropSequence sequenceName="MILKING_SEQ" />
+        </rollback>
+    </changeSet>
+
+</databaseChangeLog>

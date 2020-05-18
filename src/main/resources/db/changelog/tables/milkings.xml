@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="39b9a481-c749-4c2c-94bc-314964266486" author="baji256">
+        <createTable tableName="milk">
+            <column name="id" type="int" defaultValueSequenceNext="MILKING_SEQ">
+                <constraints primaryKey="true" nullable="false" />
+            </column>
+            <column name="created_at" type="DATETIME" />
+            <column name="updated_at" type="DATETIME" />
+            <column name="is_active" type="BOOLEAN" />
+            <column name="description" type="varchar(200)" />
+            <column name="milked_at" type="DATETIME" />
+            <column name="last_milking" type="DATETIME" />
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>
